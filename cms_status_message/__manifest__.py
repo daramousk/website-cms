@@ -11,9 +11,14 @@
     "website": "https://github.com/OCA/website-cms",
     "depends": ["website"],
     "data": [
-        "templates/assets.xml",
         "templates/status_message.xml",
         "templates/display_test.xml",
     ],
+    "assets": {
+        "web.assets_frontend": [
+            "cms_status_message/static/src/js/autodismiss.js",
+            "cms_status_message/static/src/js/tool.js",
+        ]
+    },
     "installable": True,
 }
