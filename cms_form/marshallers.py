@@ -4,7 +4,7 @@
 import html
 from collections.abc import Callable
 from dataclasses import dataclass
-from typing import Any
+from typing import Any, List
 
 from . import utils
 
@@ -28,7 +28,7 @@ def marshal_request_values(values):
 class Todo:
     okey: str
     oval: Any
-    handlers: list[Callable]
+    handlers: List[Callable]
 
 
 class Marshaller:
