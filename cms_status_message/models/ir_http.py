@@ -64,8 +64,8 @@ class IrHttp(models.AbstractModel):
             if "status_message" not in session:
                 session["status_message"] = []
             session["status_message"].append(status_message)
-            if hasattr(session, "touch"):
-                session.touch()
+            #if hasattr(session, "touch"):
+            #    session.touch()
 
     def _status_message_autodismiss_config(self):
         """Retrieve configuration for autodismiss.

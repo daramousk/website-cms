@@ -5,7 +5,7 @@ import base64
 import html
 from collections.abc import Callable
 from dataclasses import dataclass
-from typing import Any
+from typing import Any, List
 
 import werkzeug
 
@@ -27,7 +27,7 @@ def marshal_request_values(values):
 class Todo:
     okey: str
     oval: Any
-    handlers: list[Callable]
+    handlers: List[Callable]
 
 
 class Marshaller:
